@@ -38,7 +38,11 @@ Open up [localhost:3000](http://localhost:3000) and start clicking around.
 [https://threejs.org](https://threejs.org)
 
 
-  ## Known issues
+### Other Info
+This uses [GLSLify](https://github.com/glslify/glslify) in the rollup config. I just picked the first GLSL loader plugin I found, there might be a better alternative.
+  
+  
+### Known issues
   
   - SvelteGL Equirectangular Pano viewer does not wrap the texture the same as the ThreeJS component.
   - Background Transparency on sveltegl components doesn't seem to work
