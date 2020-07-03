@@ -26,16 +26,13 @@ npm run dev
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
   
-
-[svelte.dev](https://svelte.dev)
-
-[sapper.svelte.dev](https://sapper.svelte.dev)
-
-[https://github.com/sveltejs/gl](https://github.com/sveltejs/gl)
-
-[https://tailwindcss.com/docs/](https://tailwindcss.com/docs/)
-
-[https://threejs.org](https://threejs.org)
+### Resouces
+  
+- [svelte.dev](https://svelte.dev)
+- [sapper.svelte.dev](https://sapper.svelte.dev)
+- [https://github.com/sveltejs/gl](https://github.com/sveltejs/gl)
+- [https://tailwindcss.com/docs/](https://tailwindcss.com/docs/)
+- [https://threejs.org](https://threejs.org)
 
 
 ### Other Info
