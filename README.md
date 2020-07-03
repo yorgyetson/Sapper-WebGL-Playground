@@ -12,11 +12,8 @@ Sapper + Svelte + Svelte/GL + ThreeJS + Tailwindcss
 ```bash
 
 git clone https://github.com/yorgyetson/Sapper-WebGL-Playground.git playground
-
 cd playground
-
 npm install
-
 npm run dev
 
 ```
