@@ -48,6 +48,6 @@ module.exports = {
   variants: {},
   plugins: [],
   corePlugins: {
-    // container: false
+    container: false
   },
 };

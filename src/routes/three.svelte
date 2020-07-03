@@ -8,7 +8,7 @@
 </svelte:head>
 
 
-<div class="flex flex-wrap bg-blue-700 w-full">
+<div class="flex flex-wrap w-full">
 
   <div class=" w-1/2">
     <PanoramaEquirectangular image="pano3.jpg" />

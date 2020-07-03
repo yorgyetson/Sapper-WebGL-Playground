@@ -9,7 +9,8 @@
 <nav class="flex justify-between items-center bg-blue-400 py-4 px-2">
 <div>logo</div>
 	<ul class="flex">
-		<li class="p-2"><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Svelte GL</a></li>
+		<li class="p-2"><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Basic Example</a></li>
+		<li class="p-2"><a aria-current="{segment === undefined ? 'sveltegl' : undefined}" href="sveltegl">Svelte GL</a></li>
 		<li class="p-2"><a aria-current="{segment === 'three' ? 'page' : undefined}" href="three">ThreeJS</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches

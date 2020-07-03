@@ -8,7 +8,6 @@
   export let image;
 
   export let rotateX = 0.1;
-  export let rotateY = 0.001;
 
   let isUserInteracting = false;
 

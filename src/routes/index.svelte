@@ -1,31 +1,17 @@
 <script>
   import { onMount } from "svelte";
 
-  let GLPanoViewer;
-  let GLPanoSphere;
+  let BasicSvelteGL;
 
   onMount(async () => {
-    const GLPanoViewerModule = await import(
-      "../components/GLPanoViewer.svelte"
-    );
-    GLPanoViewer = GLPanoViewerModule.default;
-    const GLPanoSphereModule = await import(
-      "../components/GLPanoSphere.svelte"
-    );
-    GLPanoSphere = GLPanoSphereModule.default;
+    const module = await import("../components/BasicSvelteGL.svelte");
+    BasicSvelteGL = module.default;
   });
 </script>
 
 <svelte:head>
-  <title>Svelte GL Examples</title>
+  <title>Svelte GL Basic REPL</title>
 </svelte:head>
 
-<div class="flex w-full bg-gray-500">
-  <div class="w-full">
-    <svelte:component this={GLPanoViewer} image="pano2.jpg" />
-  </div>
-  <div class="w-full">
-    <svelte:component this={GLPanoSphere} image="pano3.jpg" />
-  </div>
-</div>
+  <svelte:component this={BasicSvelteGL} />
 
