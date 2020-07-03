@@ -1,22 +1,31 @@
 <script>
-  import PhotoSphere from '../components/PhotoSphere.svelte';
+  import { onMount } from "svelte";
 
+  let GLPanoViewer;
+  let GLPanoSphere;
+
+  onMount(async () => {
+    const GLPanoViewerModule = await import(
+      "../components/GLPanoViewer.svelte"
+    );
+    GLPanoViewer = GLPanoViewerModule.default;
+    const GLPanoSphereModule = await import(
+      "../components/GLPanoSphere.svelte"
+    );
+    GLPanoSphere = GLPanoSphereModule.default;
+  });
 </script>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Svelte GL Examples</title>
 </svelte:head>
 
-<div class="flex justify-center bg-gray-400">
-<h1>Great success!</h1>
+<div class="flex w-full bg-gray-500">
+  <div class="w-full">
+    <svelte:component this={GLPanoViewer} image="pano2.jpg" />
+  </div>
+  <div class="w-full">
+    <svelte:component this={GLPanoSphere} image="pano3.jpg" />
+  </div>
 </div>
 
-<p></p>
-<div class="flex justify-center">
- <PhotoSphere width={500} height={500} image="pano1.jpg"/> 
- <PhotoSphere width={500} height={500} image="pano2.jpg"/> 
- <PhotoSphere width={500} height={500} image="pano3.jpg"/> 
- </div>
-<div class="flex justify-center">
- <PhotoSphere width={500} height={500} image="pano4.jpg"/> 
- </div>

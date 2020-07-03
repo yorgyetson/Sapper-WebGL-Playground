@@ -4,8 +4,8 @@
 
   let content;
 
-  export let width = window.innerWidth;
-  export let height = window.innerHeight;
+  export let width;
+  export let height;
   export let boxColor = "#ffffff";
   export let image;
 

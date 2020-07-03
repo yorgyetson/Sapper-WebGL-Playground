@@ -28,8 +28,8 @@
     let animate = function() {
       requestAnimationFrame(animate);
 
-      //   sphere.rotation.x += 0.01;
-      sphere.rotation.y += 0.002;
+    //   sphere.rotation.x += 0.0005;
+      sphere.rotation.y -= 0.01;
       renderer.render(scene, camera);
     };
 
