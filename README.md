@@ -37,7 +37,7 @@ This uses [GLSLify](https://github.com/glslify/glslify) in the rollup config. I 
   
   
 ### Known issues
-  
+  - This is not at all mobile optimized.
   - SvelteGL Equirectangular Pano viewer does not wrap the texture the same as the ThreeJS component.
   - Background Transparency on sveltegl components doesn't seem to work
   - SvelteGL Scene uses the class name of `container` and TailwindCSS adds a max-width to `container`. I've disabled the `container` class inside of tailwind.config.js as a temporary fix.
